@@ -1,8 +1,9 @@
 import React from "react";
+import SignUp from "./components/SignUp";
 
 const App = () => (
   <div className="app">
-    <h1>Hello world</h1>
+    <SignUp />
   </div>
 );
 
