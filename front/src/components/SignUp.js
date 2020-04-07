@@ -6,11 +6,11 @@ class SignUp extends Component {
     this.state = {
       email: "",
       password: "",
-      name: "",
+      firstname: "",
       lastname: "",
     };
 
-    this.updateEmailField = this.updateEmailField.bind(this);
+    // this.updateEmailField = this.updateEmailField.bind(this);
     this.updateField = this.updateField.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -24,9 +24,9 @@ class SignUp extends Component {
     });
   }
 
-  updateEmailField(event) {
-    this.setState({ value: event.target.value });
-  }
+  // updateEmailField(event) {
+  //   this.setState({ value: event.target.value });
+  // }
 
   handleSubmit(event) {
     console.log(this.state);
@@ -40,7 +40,7 @@ class SignUp extends Component {
         <form>
           <input type="email" name="email" onChange={this.updateField} />
           <input type="text" name="password" onChange={this.updateField} />
-          <input type="text" name="name" onChange={this.updateField} />
+          <input type="text" name="firstname" onChange={this.updateField} />
           <input type="text" name="lastname" onChange={this.updateField} />
           <input type="submit" value="Submit" onClick={this.handleSubmit} />
         </form>
