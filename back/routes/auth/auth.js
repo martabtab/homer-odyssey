@@ -12,6 +12,8 @@ router.post("/signup", function (req, res) {
     id: result.insertId,
     ...req.body
    })
+   if (error) res.status(500).end();
+   res.end();
  });
 });
 
